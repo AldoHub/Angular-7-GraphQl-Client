@@ -1,1 +1,114 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+    background: #eee;
+    font-family: poppins;
+}
+
+a {
+    color: #222;
+    text-decoration: none;
+}
+
+
+.container {
+    margin: 0 auto;
+    width: 80%;
+    background: #fff;
+    -webkit-box-shadow: 0px 10px 22px -9px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 10px 22px -9px rgba(0,0,0,0.75);
+    box-shadow: 0px 10px 22px -9px rgba(0,0,0,0.75);
+}
+
+nav {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    width: 95%;
+    margin: 0 auto;
+}
+
+ul {
+    list-style: none;
+    padding: 0px;
+}
+
+ul li {
+    display: inline-block;
+}
+
+nav ul:first-of-type li a {
+    font-weight: bold;
+    font-size: 120%;
+}
+
+nav ul:last-of-type {
+    text-align: right;
+}
+nav ul:last-of-type li:first-of-type {
+    margin-right:10px;
+}
+
+header {
+    
+    background: url("/assets/photo-1542591906-e6f20a01152d.jpg") center;
+    background-position-y: -200px;
+    background-position-x: 100%;
+    background-size: 72%;
+    background-repeat: no-repeat;
+    height: 500px;
+    position: relative;
+    margin-bottom: 100px;
+}
+
+header div {
+    position: relative;
+    top: 270px;
+    width: 34%;
+     background:rgb(255, 209, 5);;
+    padding:10px 10px 10px 20px;
+}
+
+header div h1 {
+    
+    font-size: 4.4rem;
+    line-height: 4.4rem;
+    margin: 0;
+    
+}
+
+.posts {
+    height: 200px;
+    overflow-y:scroll;
+    padding-bottom: 120px;
+}
+
+.posts div {
+    border:1px solid #eee;
+    margin: 10px;
+    text-indent: 10px;
+    font-size: 2rem;
+}
+
+form {
+    width:90%;
+    margin: 0 auto;
+    padding-bottom: 120px;
+}
+
+form * {
+    display: block;
+}
+
+form input[type="text"], form textarea {
+    width: 100%;
+    padding: 10px;
+    font-family: poppins;
+    font-size: 1.2rem;
+}
+
+form input[type="submit"] {
+    background: rgb(255, 209, 5);
+    border: none;
+    padding: 10px;
+    font-size: 1.3rem;
+    margin-top: 20px;
+}

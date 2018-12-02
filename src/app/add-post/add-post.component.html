@@ -1,0 +1,14 @@
+<section>
+   
+  <form (ngSubmit)="addpost(addPostForm.value)" [formGroup]="addPostForm">
+    
+    <label for="name">Title:</label>
+    <input type="text" formControlName="name">
+  
+    <label for="description">Content:</label>
+    <textarea formControlName="description"></textarea>
+  
+    <input type="submit" [disabled]="!addPostForm.valid" value="Submit">
+  </form>
+ 
+</section>
